@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">
+            <span class="logo-mark">&lt;/&gt;</span>
+            <span class="logo-text">Satvik Gupta</span>
+        </div>
+        <nav class="nav">
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+            🌙
+        </button>
+    </div>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <p class="hero-kicker">Recently Pursuing Btech · Web Developer</p>
+                <h1>Hi, I’m <span class="accent">Satvik Gupta
+                </span>.</h1>
+                <p class="hero-subtitle">
+                    I like building small, useful web things with HTML, CSS, and JavaScript.
+                    I’ve done internships and freelance work where I handled
+                    real bugs, real deadlines, and real users.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary">See my work</a>
+                    <a href="#contact" class="btn ghost">Contact me</a>
+                </div>
+                <p class="hero-note">
+                    Currently learning: React basics and clean UI design.
+                </p>
+            </div>
+            <div class="hero-card">
+                <!-- Add your own picture or illustration -->
+                <img src="WhatsApp Image 2025-11-23 at 11.34.11.jpeg"alt="My Photo" width="350" height="600">
+            
+                    <li><span>Location:</span> NOIDA, India</li>
+                    <li><span>Email:</span> satvikg367@gmail.com</li>
+                    <li><span>Open to:</span> Internship / Full-time</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container two-col">
+            <div>
+                <h2>About me</h2>
+                <p>
+                    I recently pursuing my degree in Computer science. During my studies
+                    I started doing small web projects for classmates and a couple of local
+                    guests. That pushed me to learn version control, basic UI/UX, and how to
+                    explain technical things to non-technical people.
+                </p>
+                <p>
+                    I am comfortable working with the usual web stack and I enjoy the full
+                    process: understanding the problem, sketching a simple UI, and then
+                    turning it into a working feature.
+                </p>
+            </div>
+            <div>
+                <h3>Quick facts</h3>
+                <ul class="list">
+                    <li>Degree:B.Tech in Computer Science</li>
+                    <li>Graduated: 2028</li>
+                    <li>Primary focus: Frontend development</li>
+                    <li>Also interested in: basic backend, APIs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2>Skills I use in real projects</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 (semantic layout, accessibility basics)</li>
+                        <li>CSS3 (Flexbox, Grid, responsive layouts)</li>
+                        <li>Vanilla JavaScript (DOM, fetch, simple components)</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Chrome DevTools</li>
+                        
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Comfort zone</h3>
+                    <ul>
+                        <li>Turning rough ideas into working pages</li>
+                        <li>Fixing layout issues on different screen sizes</li>
+                        <li>Connecting frontend to simple REST APIs</li>
+                        <li>Explaining what I built and why</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <p class="section-subtitle">
+                    A few things I’ve built. Every project below is coded by me from scratch.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-tag">Personal Project</div>
+                    <h3>Weather Dashboard</h3>
+                    <p>
+                        A small web app that shows current weather and a 5-day forecast using a public API.
+                        I handled API calls, error states, and responsive design.
+                    </p>
+                    <ul class="project-tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript (fetch API)</li>
+                    </ul>
+                    <div class="project-links">
+
+                        <a href="https://satvikg367-commits.github.io/MY-2PROJECT/" target="_blank">Live demo</a>
+                    </div>
+                    <button class="project-more" data-project="weather">
+                        What I learned
+                    </button>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-tag">College Project</div>
+                    <h3>Task Tracker</h3>
+                    <p>
+                        A small task tracker web app with local storage. Users can add, edit, and
+                        mark tasks as done without creating an account.
+                    </p>
+                    <ul class="project-tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript (localStorage)</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://satvikg367-commits.github.io/projects/" target="_blank">Live demo</a>
+
+                    <button class="project-more" data-project="task-tracker">
+                        What I learned
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+                <article class="timeline-item">
+                    <h3>Freelance Web Projects</h3>
+                    <p class="timeline-meta">2024 – Present</p>
+                    <ul>
+                        <li>Built basic websites for friends and local contacts (portfolio, landing pages).</li>
+                        <li>Helped non-technical clients understand what is realistic for their budget and time.</li>
+                        <li>Handled deployment on Netlify / GitHub Pages.</li> <!---->
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container contact-grid">
+            <div>
+                <h2>Let’s talk</h2>
+                <p>
+                    If you think I could be a good fit for your team, or if you just want to
+                    ask something about my projects, send me a message. I usually reply within a day.
+                </p>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> satvikg367@gmail.com</li>
+  <li><strong>GitHub:</strong> <a href="https://github.com/satvikg367-commits" target="_blank" rel="noopener noreferrer">github.com/satvikg367-commits</a></li>
+
+            </div>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/satvikgg" target="_blank" rel="noopener noreferrer">linkedin.com/in/satvikgg</a></li>
+
+            </div>
+            <form class="contact-form" id="contactForm">
+                <label>
+                    Name
+                    <input type="text" name="name" required />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required />
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="4" required></textarea>
+                </label>
+                <button type="submit" class="btn primary">Send</button>
+                <p class="form-note" id="formNote"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>© <span id="year"></span> Satvik Gupta</span>
+        <span class="footer-note">This site is hand-coded with HTML, CSS, and a bit of JS.</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
